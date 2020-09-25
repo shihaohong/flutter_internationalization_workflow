@@ -9,14 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      title: 'Flutter Internationalization Demo',
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Internationalized App'),
     );
   }
 }
@@ -41,7 +37,27 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(AppLocalizations.of(context).helloWorld),
+            Text('System localized "helloWorld" message": ${AppLocalizations.of(context).helloWorld}'),
+            Localizations.override(
+              context: context,
+              locale: const Locale('en'),
+              // Using a Builder here to get the correct BuildContext.
+              child: Builder(
+                builder: (BuildContext context) {
+                  return Text('English "helloWorld" message: ${AppLocalizations.of(context).helloWorld}');
+                }
+              ),
+            ),
+            Localizations.override(
+              context: context,
+              locale: const Locale('es'),
+              // Using a Builder here to get the correct BuildContext.
+              child: Builder(
+                builder: (BuildContext context) {
+                  return Text('Spanish "helloWorld" message: ${AppLocalizations.of(context).helloWorld}');
+                }
+              ),
+            ),
           ],
         ),
       ),
