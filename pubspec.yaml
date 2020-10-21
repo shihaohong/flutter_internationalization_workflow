@@ -12,7 +12,6 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: 0.16.1
-<<<<<<< HEAD
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -27,7 +26,5 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
-=======
->>>>>>> 4c66b706bfa8a44d3a2fca02977d3c103ce81515
 flutter:
   generate: true
