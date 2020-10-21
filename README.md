@@ -1,17 +1,15 @@
-# test_l10n
+# Internationalization Workflow
 
-A new Flutter project.
+A demo application that showcases a simple internationalized Flutter application.
 
-## Getting Started
+See the `lib/l10n` directory for the source of the message catalogs used for
+the English and Spanish `helloWorld` strings.
 
-This project is a starting point for a Flutter application.
+The `l10n.yaml` file is required to trigger the internationalizations tool upon
+hot reload, hot restart, and running the application.
 
-A few resources to get you started if this is your first Flutter project:
+For more configuration options for the internationalizations tool, use:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# synthetic_l10n
+```shell
+flutter gen-l10n --help
+```
