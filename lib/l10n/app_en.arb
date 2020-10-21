@@ -1,6 +1,18 @@
 {
-    "helloWorld": "Hello World",
+    "@@locale": "en",
+
+    "helloWorld": "Hello World!",
     "@helloWorld": {
-      "description": "programmer hello"
+      "description": "The conventional newborn programmer greeting"
+    },
+
+    "anotherHello": "Hello Second Time World!",
+    "@anotherHello": {
+      "description": "The conventional newborn programmer greeting"
+    },
+
+    "aThirdHello": "Hello Third Time World!",
+    "@aThirdHello": {
+      "description": "The conventional newborn programmer greeting"
     }
   }

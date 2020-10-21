@@ -1,1 +1,2 @@
-template-arb-file: app_en.arb
+untranslated-messages-file: lib/l10n/untranslated.json
+header: "// GENERATED CODE - DO NOT MODIFY BY HAND"
