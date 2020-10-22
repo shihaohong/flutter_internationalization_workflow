@@ -11,7 +11,7 @@
       "description": "The conventional newborn programmer greeting"
     },
 
-    "aThirdHello": "Hello Third Time World!",
+    "aThirdHello": "Hello forth time!",
     "@aThirdHello": {
       "description": "The conventional newborn programmer greeting"
     }
